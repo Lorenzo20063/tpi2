@@ -19,7 +19,7 @@
     event.preventDefault();
     const userData = { nome, cognome, sesso, skills, dataNascita};
     try {
-      const res = await fetch("https://form-tpi2-be.vercel.app/utente", {
+      const res = await fetch("https://form-tpi2-be.vercel.app", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(userData),
